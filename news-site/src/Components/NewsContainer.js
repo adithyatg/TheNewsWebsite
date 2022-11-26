@@ -5,7 +5,7 @@ import axios from 'axios';
 import PropTypes from 'prop-types'
 
 const Axios = axios.create({
-    baseURL: `http://localhost:5000`
+    baseURL: `http://localhost:5050`
   })
 
 class NewsContainer extends Component

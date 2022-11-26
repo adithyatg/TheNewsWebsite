@@ -7,6 +7,7 @@ import {
   }
   from 'mdb-react-ui-kit';
 import Image from '../Assets/The News Website.png'
+import Image1 from '../Assets/loginimg.png'
 import './index.css'
 import Styles from './snackbar.module.css'
 import { Button } from "react-bootstrap";
@@ -15,7 +16,7 @@ import { Navigate } from "react-router-dom";
 
 
 const Axios = axios.create({
-  baseURL: `http://localhost:5000`
+  baseURL: `http://localhost:5050`
 })
 
 
@@ -160,10 +161,10 @@ const SignIn = ({ onChange, onSignIn, onPress }) => {
                 <p>Please login to your account</p>
               </div>
               <div className="d-flex justify-content-center">
-                <MDBInput wrapperClass='mb-4 w-75' label='Email address' name="email" autoFocus onChange={onChange} required type='email'/>
+                <MDBInput wrapperClass='mb-4 w-75' label='Email address' name="email" placeholder="Enter your Email ID here" autoFocus onChange={onChange} required type='email'/>
               </div>
               <div className="d-flex justify-content-center">
-                <MDBInput wrapperClass='mb-4 w-75' label='Password' name="passwd" onChange={onChange} required type='password'/>
+                <MDBInput wrapperClass='mb-4 w-75' label='Password' name="passwd" placeholder="Enter your password here" onChange={onChange} required type='password'/>
               </div>
               <div className="text-center pt-1 mb-5 pb-1">
               {/* <MDBBtn className="mb-4 w-100 gradient-custom-2" type="submit">Sign in</MDBBtn> */}
@@ -190,7 +191,9 @@ const SignIn = ({ onChange, onSignIn, onPress }) => {
         <div className="d-flex flex-column  justify-content-center gradient-custom-2 h-100 mb-4">
 
           <div className="text-white px-3 py-4 p-md-5 mx-md-4">
-            <h4 className="mb-4">Login to our website</h4>
+            
+            <img src={Image1} style={{width: '500px'}} alt="logo" />
+            
             <p className="small mb-0"></p>
           </div>
 
@@ -223,10 +226,10 @@ const SignUp = ({ onChange, onSignUp, onPress}) => {
                   <p>Register for an account</p>
                 </div>
                 <div className="d-flex justify-content-center">
-                  <MDBInput wrapperClass='mb-4 w-75' label='Email address' name="email" onChange={onChange} required type='email'/>
+                  <MDBInput wrapperClass='mb-4 w-75' label='Email address' placeholder="Enter your Email ID here" name="email" onChange={onChange} required type='email'/>
                 </div>
                 <div className="d-flex justify-content-center">
-                  <MDBInput wrapperClass='mb-4 w-75' label='Password' name="passwd" onChange={onChange} required type='password'/>
+                  <MDBInput wrapperClass='mb-4 w-75' label='Password' name="passwd" placeholder="Enter your password here" onChange={onChange} required type='password'/>
                 </div>
                 <div className="text-center pt-1 mb-5 pb-1">
                 {/* <MDBBtn className="mb-4 w-100 gradient-custom-2" type="submit">Sign in</MDBBtn> */}
