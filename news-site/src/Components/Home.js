@@ -4,7 +4,7 @@ import IGIMG from "../Assets/instagram.png"
 import FBIMG from "../Assets/facebook.png"
 import TWIMG from "../Assets/twitter.png"
 import LKIMG from "../Assets/linkedin.png"
-import TextTransition, { presets } from "react-text-transition";
+// import TextTransition, { presets } from "react-text-transition";
 
 
 class Home extends Component {

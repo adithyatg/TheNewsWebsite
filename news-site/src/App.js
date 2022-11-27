@@ -8,6 +8,8 @@ import {Component} from 'react';
 // import SideBar from './Components/Sidebar'
 import { setToken, getToken } from './Login/useToken.js'
 import Login from './Login/login';
+import Profile from'./Components/Profile';
+import Comics from './Components/comics'
 
 export class App extends Component {
   constructor() {
@@ -53,6 +55,8 @@ export class App extends Component {
                     <Route exact path = '/head/sports' element = {<NewsContainer key = 'sports' country = 'in' category = 'sports' />} />
                     <Route exact path = '/head/health' element = {<NewsContainer key = 'health' country = 'in' category = 'health' />} />
                     <Route exact path = '/head/sci' element = {<NewsContainer key = 'sci' country = 'in' category = 'science' />} />
+                    <Route exact path = '/profile' element = {<Profile/>} />
+                    <Route exact path = '/comics' element = {<Comics/>} />
               </Routes> 
       </Router>
     )

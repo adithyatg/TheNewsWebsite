@@ -11,7 +11,7 @@ function NavBar({ logOut }) {
   return (
     <Navbar bg="dark" expand="lg" variant = 'dark'>
       <Container fluid>
-        <Navbar.Brand href="#">The News Site</Navbar.Brand>
+        <Navbar.Brand href="#">The News Website</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -38,8 +38,11 @@ function NavBar({ logOut }) {
                 Something else here
               </NavDropdown.Item> */}
             </NavDropdown>
-            <Nav.Link href="#" disabled>
-              Link
+            <Nav.Link href="/comics">
+              Comics
+            </Nav.Link>
+            <Nav.Link href="/profile">
+              Profile
             </Nav.Link>
           </Nav>
           <Form className="d-flex">
